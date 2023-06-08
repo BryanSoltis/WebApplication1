@@ -16,6 +16,13 @@ namespace WebApplication1.Pages
         public void OnGet()
         {
 
+            SqlConnection conn = new SqlConnection();
+            conn.ConnectionString =
+              "Data Source=ServerName;" +
+              "Initial Catalog=DataBaseName;" +
+              "User id=UserName;" +
+              "Password=Secret;";
+            conn.Open();
         }
     }
 }
